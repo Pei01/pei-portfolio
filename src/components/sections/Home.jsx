@@ -1,4 +1,5 @@
-import { RevealOnScroll } from "../RevealOnScroll"
+import AnimatedTitle from "../AnimatedTitle";
+import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Home = () => {
     return (
@@ -7,10 +8,8 @@ export const Home = () => {
             className="min-h-screen flex items-center justify-center relative"
         >
             <RevealOnScroll>
-                <div className="text-center z-10 px-4">
-                    <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">
-                        Welcome to my website
-                    </h1>
+                <div className="flex flex-col text-center z-10 px-4 gap-y-2">
+                    <AnimatedTitle title="Welcome to my website" containerClass="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right"/>
 
                     <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
                         I'm a full-stack developer with a passion for creating beautiful and functional websites.

@@ -55,3 +55,11 @@ body {
 .nav-hover-btn {
   @apply relative text-gray-300 hover:text-white transition-all after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:bg-white after:origin-right after:scale-x-0 after:transition-transform after:duration-300 after:ease-out hover:after:origin-left hover:after:scale-x-100 cursor-pointer;
 }
+
+.animated-char {
+  @apply translate-y-[100px] inline-block mb-0;
+}
+
+.mask-clip-path {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
